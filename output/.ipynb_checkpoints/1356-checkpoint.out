@@ -1,0 +1,78 @@
+first=False
+ nodes_to_avg=[1356, 510, 526, 616, 646, 886, 1298, 1673, 1844, 720]
+ local_pos=pickles/616_clcl.obj
+
+0.6013203692822411
+[0.52119473 0.55230298 0.54029114 0.50588958 0.62502607 0.52549993
+ 0.48457057 0.66706665 0.73014436 0.78439407]
+      fun: 0.5854146478430836
+ hess_inv: <30x30 LbfgsInvHessProduct with dtype=float64>
+      jac: array([ 4.60742543e-05, -7.34967643e-05, -1.33226763e-05, -1.48991930e-04,
+        3.85691479e-04,  2.92765812e-04, -4.01900724e-05, -5.24913432e-04,
+        2.33146835e-06, -2.15161216e-04, -1.03361761e-04, -2.73336909e-04,
+        2.07056600e-04,  2.90878432e-04,  3.46500597e-04, -1.53210777e-05,
+       -5.37347944e-05,  2.66453519e-06, -9.23705557e-05,  1.42219569e-04,
+       -3.04423154e-04, -1.36002321e-04, -2.19824159e-04,  5.80646642e-05,
+       -1.31561428e-04,  1.03916875e-04,  2.16493490e-05,  1.76414439e-04,
+       -4.86277685e-05, -5.26245714e-05])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 2945
+      nit: 84
+     njev: 95
+   status: 0
+  success: True
+        x: array([ 3.56785562e-01, -1.18161839e-02, -5.04834791e-02, -2.00791097e-03,
+        3.33796284e-04,  6.20636937e-02,  4.59995141e-01, -3.51259134e-01,
+       -2.55432253e-02,  4.47289486e-01,  3.42556206e-01, -1.81482055e-02,
+        8.40374350e-01,  9.14218308e-04,  3.22683807e-01, -4.34634919e-03,
+       -1.77918997e-02, -4.09308877e-01,  1.42184802e-01,  1.83537761e-03,
+       -2.01808269e-01,  1.13668442e-01,  9.46426489e-02,  1.39912908e-01,
+       -8.60155658e-02, -5.94293311e-03,  1.38718960e-01, -2.09308279e-01,
+       -4.12091076e-02,  1.73684954e-01])
+[0.5128213  0.55125929 0.52024794 0.53886621 0.61721837 0.51533793
+ 0.45594079 0.66186908 0.6492093  0.73449022]
+charge RMSD: 0.0004140505118941775
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1356.p.cube'... just atom number 
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1356.p.cube'... mode     1
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p510.p.cube'... mode     1
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p526.p.cube'... mode     1
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p616.p.cube'... mode     1
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p646.p.cube'... mode     1
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p886.p.cube'... mode     1
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1298.p.cube'... mode     1
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1673.p.cube'... mode     1
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1844.p.cube'... mode     1
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p720.p.cube'... mode     1
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1356.p.cube'... mode     2
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p510.p.cube'... mode     2
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p526.p.cube'... mode     2
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p616.p.cube'... mode     2
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p646.p.cube'... mode     2
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p886.p.cube'... mode     2
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1298.p.cube'... mode     2
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1673.p.cube'... mode     2
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1844.p.cube'... mode     2
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p720.p.cube'... mode     2
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1356.p.cube'... mode     3
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p510.p.cube'... mode     3
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p526.p.cube'... mode     3
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p616.p.cube'... mode     3
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p646.p.cube'... mode     3
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p886.p.cube'... mode     3
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1298.p.cube'... mode     3
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1673.p.cube'... mode     3
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1844.p.cube'... mode     3
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p720.p.cube'... mode     3
+Reading '/home/unibas/boittier/MDCM/examples/multi-conformer/5-charmm-files/10charges.dcm'...
+Reading '/home/unibas/boittier/fdcm_project/mdcms/methanol/10charges.xyz'...
+Start computing local axis systems ...
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1356.p.cube'... mode     4
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p510.p.cube'... mode     4
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p526.p.cube'... mode     4
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p616.p.cube'... mode     4
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p646.p.cube'... mode     4
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p886.p.cube'... mode     4
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1298.p.cube'... mode     4
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1673.p.cube'... mode     4
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1844.p.cube'... mode     4
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p720.p.cube'... mode     4

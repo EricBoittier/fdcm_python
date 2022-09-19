@@ -1,0 +1,4 @@
+first=False
+ nodes_to_avg=[375]
+ local_pos=pickles/649_clcl.obj
+

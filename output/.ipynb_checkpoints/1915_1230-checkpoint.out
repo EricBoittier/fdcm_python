@@ -1,0 +1,43 @@
+first=False
+ nodes_to_avg=[1915, 1230]
+ local_pos=pickles/100_clcl.obj
+
+0.5420134456483342
+[0.40975795 0.61384031]
+      fun: 0.4491917509795798
+ hess_inv: <30x30 LbfgsInvHessProduct with dtype=float64>
+      jac: array([ 4.22939450e-04, -1.06248344e-04, -5.86752869e-05, -3.43558515e-04,
+        1.31117339e-04,  1.01380016e-03,  5.70710130e-04, -9.38415986e-04,
+        3.43891582e-04,  3.09641193e-04,  8.82072169e-05,  1.28730360e-04,
+       -5.23303637e-04,  4.21773727e-04, -1.48658859e-04, -6.28330721e-04,
+        2.65620859e-04, -1.54709579e-04, -7.09876583e-04,  3.33233441e-04,
+       -4.40314452e-04, -2.20490293e-04, -3.76643161e-04, -1.11244347e-04,
+       -3.80251386e-05, -5.65603120e-04,  7.79931675e-04,  2.80220284e-04,
+        3.28848060e-04,  7.90478794e-05])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 3472
+      nit: 102
+     njev: 112
+   status: 0
+  success: True
+        x: array([ 0.41314081,  0.02162396, -0.00990802,  0.00559267,  0.00659221,
+        0.04462969,  0.42366479, -0.39630834,  0.00511055,  0.44221357,
+        0.38018117,  0.00847115,  0.83182814, -0.00131394,  0.26517357,
+       -0.0815458 , -0.00217887, -0.2467389 ,  0.33235708,  0.14259765,
+       -0.09530086,  0.11344005,  0.15064149,  0.20576768,  0.03939864,
+        0.04560199,  0.13942477, -0.285784  , -0.17873552,  0.13350163])
+0.4406055860319289
+[0.3959384  0.43855068]
+charge RMSD: 0.0010732706204084864
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1915.p.cube'... just atom number 
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1915.p.cube'... mode     1
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1230.p.cube'... mode     1
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1915.p.cube'... mode     2
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1230.p.cube'... mode     2
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1915.p.cube'... mode     3
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1230.p.cube'... mode     3
+Reading '/home/unibas/boittier/MDCM/examples/multi-conformer/5-charmm-files/10charges.dcm'...
+Reading '/home/unibas/boittier/fdcm_project/mdcms/methanol/10charges.xyz'...
+Start computing local axis systems ...
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1915.p.cube'... mode     4
+Reading '/data/unibas/boittier/graphscan/methanol/t3/p1230.p.cube'... mode     4
