@@ -10,7 +10,7 @@ import argparse
 import configparser
 
 # Load FDCM modules
-from pydcm import Scan, DCM, mdcm
+from pydcm import mdcm
 
 # Optimization
 from scipy.optimize import minimize

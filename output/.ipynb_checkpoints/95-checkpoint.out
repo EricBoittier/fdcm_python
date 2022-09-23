@@ -1,4 +1,0 @@
-first=False
- nodes_to_avg=[95, 114, 517, 847, 1732, 1969, 1748]
- local_pos=pickles/1969_clcl.obj
-

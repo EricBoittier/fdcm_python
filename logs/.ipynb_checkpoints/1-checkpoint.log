@@ -1,5 +1,0 @@
-usage: fdcm_python.py [-h] [-f FIRST] -n [NODES_TO_AVG [NODES_TO_AVG ...]]
-                      [-l LOCAL_POS]
-fdcm_python.py: error: argument -f/--first: expected one argument
-Submitted batch job 39487591
-Submitted batch job 39487592
