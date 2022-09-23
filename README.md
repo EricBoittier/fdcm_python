@@ -1,4 +1,6 @@
-# fdcm_python
+# A package for optimizing and fitting flexible DCM models for MD Simulation
+
+
 
 ## Scan ideas
 ### All

@@ -7,13 +7,14 @@ import numpy as np
 import pickle
 import pandas as pd
 import argparse
-import configparser
 
 # Load FDCM modules
 from pydcm import mdcm
 
 # Optimization
 from scipy.optimize import minimize
+
+from regression import inv_scale_min_max, process_data
 
 mdcm_cxyz = "/home/unibas/boittier/fdcm_project/mdcms/methanol/10charges.xyz"
 mdcm_clcl = "/home/unibas/boittier/MDCM/examples/multi-conformer/5-charmm-files/10charges.dcm"
@@ -78,10 +79,8 @@ def mdcm_set_up(nodes_to_average, first=True, local_pos=None):
     # Get and set local MDCM array (to check if manipulation is possible)
     clcl = mdcm.mdcm_clcl
     mdcm.set_clcl(clcl)
-    # print(clcl)
 
     if local_pos is not None:
-        # print("setting local pos:", local_pos)
         mdcm.set_clcl(local_pos)
 
     # Get and set global MDCM array (to check if manipulation is possible)
@@ -134,6 +133,44 @@ def optimize_mdcm(mdcm, clcl, outdir, outname, l2=100.0):
     pickle.dump(clcl_out, filehandler)
     # Not necessary but who knows when it become important to deallocate all 
     # global arrays
+    mdcm.dealloc_all()
+
+
+def evaluate_rmse(structure_key, results_pkl, df_pickle):
+    df = pd.read_pickle(df_pickle)
+    lcs_df, uptri_df = process_data(df)
+
+    results = pd.read_pickle(results_pkl)
+
+    local_pos = []
+
+    N_objectives = len(results["keys"])
+
+    for i in range(N_objectives):
+        model = results["models"][i]
+        min_max = results["scale_parms"][i]
+        result = inv_scale_min_max(model.predict([uptri_df.loc[structure_key]]), min_max[0], min_max[1])
+        local_pos.append(result)
+
+    mdcm_obj = mdcm_set_up([structure_key], first=False, local_pos=None)
+
+    initial_rmse = mdcm_obj.get_rmse()
+
+    clcl = mdcm_obj.mdcm_clcl
+    charges = clcl.copy()
+    new_clcl = get_clcl(local_pos, charges)
+
+    mdcm_obj.dealloc_all()
+
+    mdcm = mdcm_set_up([structure_key], first=False, local_pos=new_clcl)
+    final_rmse = mdcm.get_rmse()
+
+    # Write MDCM global from local and Fitted ESP cube files
+    mdcm.write_cxyz_files()
+    mdcm.write_mdcm_cube_files()
+
+    print("{} {:.2f} {:.2f}".format(structure_key, initial_rmse, final_rmse))
+
     mdcm.dealloc_all()
 
 
